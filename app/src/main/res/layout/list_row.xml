@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!--  ListRow Left sied Thumbnail image -->
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="1dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/image"/>
+
+
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/list_image"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/relative"
+        android:layout_toRightOf="@+id/list_image"
+        android:layout_below="@+id/title">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_clock"
+            android:id="@+id/imageView"/>
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageView"
+        android:gravity="center"
+        android:text="18 hours ago"
+        android:textSize="10dip"
+        android:textColor="#cccc"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"
+        android:textColor="#ccc"
+        android:textSize="10dip"
+        android:layout_marginTop="1dip"
+        android:layout_marginLeft="10dp"
+
+        android:layout_toRightOf="@+id/list_image"
+        android:text="Just gona stand there and ..." />
+
+    <!-- Rightend Duration -->
+
+
+    <!-- Rightend Arrow -->
+</RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
